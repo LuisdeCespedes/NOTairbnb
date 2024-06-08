@@ -1,76 +1,106 @@
 body {
     background-color: #ffffff;
 }
+
 #Top {
     padding: 0 0 5px 0;
 }
 
-    #TopFinder {
-        position: relative;
-        width: 80%; 
-        height: 50px;
-        padding: 0px;
-        border-radius: 50px;
-        background-color: #ffffff;
-        color: #8b8b8b;
-        border-color: #e6e6e6;
-        margin: 10px 50px 14px 14px;
-        box-shadow: 0px 5px 5px 0px rgba(102, 102, 102, 0.459);
-    }
-    #Glass {
-        position: absolute; /* Indicamos que el icono de la lupa será posicionado de manera absoluta */
-        top: 50%; /* Lo posicionamos en el centro vertical del botón */
-        left: 20px; /* Lo posicionamos 10px desde el borde izquierdo del botón */
-        width: 20px; /* Ajustamos el tamaño del icono de la lupa */
-        transform: translateY(-50%);
-    }
-    #where {
-        position: absolute;
-        left: 60px; /* Lo posicionamos 10px desde el borde izquierdo del botón */
-        font-size: 14px; /* Ajustamos el tamaño de la fuente */
-        color: #0f0f0f; /* Ajustamos el color de la fuente */
-        top: 10%; /* cuanto va a bajar */
-        font-weight: bold;
-    }
-    #any {
-        position: absolute;
-        font-size: 12px; /* Ajustamos el tamaño de la fuente */
-        color: #9b9b9b; /* Ajustamos el color de la fuente */
-        top: 50%; /* cuanto va a bajar */
-        left: 60px;
-    }
-    #Filter {
-        position: absolute;
-        background-color: #ffffff;
-        border-color: #e6e6e6;
-        top: 3%; /* cuanto va a bajar */
-        left: 350px;
-        width: 40px;
-        height: 40px;
-        border-radius: 50px;
-    }
-    #Filterimg {
-        position: absolute; /* Indicamos que el icono de la lupa será posicionado de manera absoluta */
-        top: 50%; /* Lo posicionamos en el centro vertical del botón */
-        left: 10px; /* Lo posicionamos 10px desde el borde izquierdo del botón */
-        width: 20px; /* Ajustamos el tamaño del icono de la lupa */
-        transform: translateY(-50%);
-        height: 16px;
-        width: 16px;
-    }
-/*#Carrousel {
+#TopFinder {
+    position: relative;
+    width: 312px;
+    height: 54px;
+    padding: 0px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #8b8b8b;
+    border: 1px solid #e6e6e6;
+    border-color: #dddddd;
+    margin: 10px 50px 10px 14px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#Glass {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 20px;
+    transform: translateY(-50%);
+}
+
+#where {
+    position: absolute;
+    left: 60px;
+    font-size: 14px;
+    color: #0f0f0f;
+    top: 10%;
+    font-weight: bold;
+}
+
+#any {
+    position: absolute;
+    font-size: 12px;
+    color: #9b9b9b;
+    top: 50%;
+    left: 60px;
+}
+
+#Filter {
+    position: absolute;
+    background-color: #ffffff;
+    border-color: #707070;
+    top: 2.5%;
+    left: 350px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid #e6e6e6;
+}
+
+#Filterimg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    transform: translateY(-50%);
+    height: 16px;
+    width: 16px;
+}
+
+#Carrousel {
     position: relative;
     box-shadow: 0px 5px 0px 0px rgba(207, 207, 207, 0.459);
     height: 55px;
-    /*border: solid;
-    border-width: 0.5px;
-    
+    overflow: auto;
 }
-imagen 24 de lado y 12 de alto
+
 #SymbolsAndTitles {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
 
-}*/
+#Beachfront, #New, #EarthHomes, #Play, #NationalParks, #OMG, #AmazingPools, #Icons, #Cabins, #AmazingViews, #Farms, #Countryside, #Castles, #Lakefront, #OffTheGrid, #Vineyards, #Treehouses, #Camping, #Mansions, #Trending, #Tropical, #TinyHouses, #Boats, #Luxe, #Lake, #Islands, #Design, #HistoricalHomes, #Barns, #Houseboats, #Yurts, #TopCities, #Caves {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 1px 0px;
+}
+
+.symbol {
+    display: flex;
+    padding: 2px 30px 2px 30px;
+    height: 24px;
+    margin-bottom: 3px;
+    opacity: 0.5;
+}
+
+.symboltext {
+    padding: 0px;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+}
