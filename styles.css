@@ -3,10 +3,11 @@ body {
 }
 
 #Top {
-    padding: 0 0 5px 0;
+    padding: 0 0 6px 0;
 }
 
 #TopFinder {
+    right: 10px;
     position: relative;
     width: 312px;
     height: 54px;
@@ -16,7 +17,7 @@ body {
     color: #8b8b8b;
     border: 1px solid #e6e6e6;
     border-color: #dddddd;
-    margin: 10px 50px 10px 14px;
+    margin: 10px 50px 10px 22px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -33,7 +34,7 @@ body {
     left: 60px;
     font-size: 14px;
     color: #0f0f0f;
-    top: 10%;
+    top: 15%;
     font-weight: bold;
 }
 
@@ -41,7 +42,7 @@ body {
     position: absolute;
     font-size: 12px;
     color: #9b9b9b;
-    top: 50%;
+    top: 52%;
     left: 60px;
 }
 
@@ -69,13 +70,15 @@ body {
 
 #Carrousel {
     position: relative;
-    box-shadow: 0px 5px 0px 0px rgba(207, 207, 207, 0.459);
+    box-shadow: 0px 2px 0px 0px rgba(207, 207, 207, 0.459);
     height: 55px;
     overflow: auto;
+    padding: 0px 20px 0px 20px;
 }
 
 #SymbolsAndTitles {
     position: relative;
+    right: 35px; /* Aqui para ajaustar el margen izquierdo de donde comienzan los simbolos */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -92,10 +95,10 @@ body {
 
 .symbol {
     display: flex;
-    padding: 2px 30px 2px 30px;
+    padding: 2px 31.5px 2px 31.5px;
     height: 24px;
-    margin-bottom: 3px;
-    opacity: 0.5;
+    margin-bottom: 1px;
+    opacity: 0.7;
 }
 
 .symboltext {
@@ -103,4 +106,146 @@ body {
     font-size: 13px;
     text-align: center;
     display: block;
+}
+
+#Products {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+   /* overflow: auto;*/
+    padding: 0px 0px 0px 0px;
+}
+
+#Hert, #Ranmore, #Oxford, #Suffolk, #Langton, #Moreton, #Bloxham, #Stewton, #Docking, #Warton, #ThorpeMorieux, #Essex, #GreensteadGreen, #Cottered, #Adstock, #KingsLynn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px -10px 0px;
+    position: relative;
+}
+
+
+
+.ImageContainerWrapper {
+    width: 364px;
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+    display: flex; /* Agregado */
+    flex-direction: column; /* Agregado */
+}
+
+.ImageContainer {
+
+    position: relative;
+    display: flex;
+    overflow-x: auto; /* Habilita el scroll horizontal */
+    scroll-snap-type: x mandatory; /* Snap obligatorio en el eje X */
+    gap: 10px; /* Espacio entre las imágenes */
+    padding: 0px; /* Espacio interno */
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */;
+    
+    
+}
+
+.Photos {
+    
+    min-width: 364px;
+    height: 345.7px; /* Altura fija para todas las imágenes */
+    width: 364px; /* Ancho fijo para todas las imágenes */
+    /*border-radius: 30px; /* Bordes redondeados */
+    object-fit: cover; /* Mantiene la relación de aspecto al recortar
+    flex: 0 0 auto; /* No permite flexibilidad en tamaño */
+    scroll-snap-align: start; /* Alinea el inicio de cada imagen con el contenedor */
+    margin-right: 10px; /* Espacio entre imágenes */
+    padding: 24px 0px 24px 0px;
+    border-radius: 40px;
+    /*clip-path: inset(5px round 60px);*/
+}
+
+
+
+
+.PhotoTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Nuevo: Centra el contenido de texto */
+    padding: 14px;
+    font-size: 15px;
+    text-align: left; /* Nuevo: Centra el texto */
+}
+
+/*.PhotoTexts3 {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 14px;
+    font-size: 15px;
+    text-align: left;
+}*/
+
+
+
+.location, .hostType, .dates, .blank, .price {
+    position: relative;
+    bottom: 21px;
+    right: 118px;
+    text-align: left;
+    /*justify-content: flex-start;*/
+    margin: 0; /* Elimina cualquier margen que pueda causar desalineación */
+    padding: 0px 0px 2px 0px; /* Ojo que al estar rotado en columna el tercer valor marca la horizontal */
+    opacity: 70%;
+    font-family: Helvetica;
+}
+
+/* Poner en negrita las clases location y price */
+.location, .price {
+    font-weight: bold;
+    opacity: 100%;
+}
+
+.price {
+    position: relative;
+    top: -10px;
+    text-decoration: underline;
+    padding: 0px 0px -50px 0px;
+}
+
+.heart {
+    position: absolute;
+    top: 32px;
+    right: 20px; /* Cambiado: Alinear a la derecha para mejor alineación */
+    height: 25px;
+    width: 25px;
+    font-size: 29px;
+    color: white;
+}
+
+.Guest {
+    position: absolute;
+    top: 40px; /* Ajusta la distancia desde la parte superior */
+    left: 27px; /* Ajusta la distancia desde la derecha */
+    background: rgb(255, 255, 255); /* Fondo semitransparente para mejorar la legibilidad */
+    color: rgb(32, 32, 32);
+    padding: 5.5px 12px; /* Ajusta el relleno según tus necesidades */
+    border-radius: 30px; /* Ajusta esto según tus necesidades */
+    font-size: 14px; /* Ajusta esto según tus necesidades */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 2px 10px 0px rgba(167, 167, 167, 0.8);
+
+}
+
+
+
+.StarAndNumber, .StarAndNumber2 { /* Aplicar estilos consistentes para ambas clases */
+    position: absolute; /* Cambiado: Usar posición absoluta para alinear consistentemente */
+    bottom: 95px; /* Ajustar para una mejor alineación */
+    right: 20px; /* Alinear a la derecha para consistencia */
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
