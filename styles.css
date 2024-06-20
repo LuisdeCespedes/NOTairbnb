@@ -1,13 +1,23 @@
 body {
     background-color: #ffffff;
+    margin: 0px;
+}
+
+#StickyTop{
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+
 }
 
 #Top {
-    padding: 0 0 6px 0;
+    padding: 6px 0 6px 0;
 }
 
 #TopFinder {
-    right: 10px;
+    right: -5px;
     position: relative;
     width: 312px;
     height: 54px;
@@ -50,7 +60,7 @@ body {
     position: absolute;
     background-color: #ffffff;
     border-color: #707070;
-    top: 2.5%;
+    top: 21px;
     left: 350px;
     width: 40px;
     height: 40px;
@@ -67,6 +77,7 @@ body {
     height: 16px;
     width: 16px;
 }
+
 
 #Carrousel {
     position: relative;
@@ -141,8 +152,8 @@ body {
     display: flex;
     overflow-x: auto; /* Habilita el scroll horizontal */
     scroll-snap-type: x mandatory; /* Snap obligatorio en el eje X */
-    gap: 10px; /* Espacio entre las imágenes */
-    padding: 0px; /* Espacio interno */
+   /* gap: 10px;*/
+    /*padding: 0px;*/
     width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
     box-sizing: border-box; /* Incluye el padding en el tamaño total */;
     
@@ -171,7 +182,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start; /* Nuevo: Centra el contenido de texto */
-    padding: 14px;
+    padding: 14px 14px 14px 0px;
     font-size: 15px;
     text-align: left; /* Nuevo: Centra el texto */
 }
@@ -216,7 +227,7 @@ body {
 .heart {
     position: absolute;
     top: 32px;
-    right: 20px; /* Cambiado: Alinear a la derecha para mejor alineación */
+    right: 32px;
     height: 25px;
     width: 25px;
     font-size: 29px;
@@ -225,13 +236,13 @@ body {
 
 .Guest {
     position: absolute;
-    top: 40px; /* Ajusta la distancia desde la parte superior */
-    left: 27px; /* Ajusta la distancia desde la derecha */
-    background: rgb(255, 255, 255); /* Fondo semitransparente para mejorar la legibilidad */
+    top: 40px;
+    left: 35px; 
+    background: rgb(255, 255, 255); 
     color: rgb(32, 32, 32);
-    padding: 5.5px 12px; /* Ajusta el relleno según tus necesidades */
-    border-radius: 30px; /* Ajusta esto según tus necesidades */
-    font-size: 14px; /* Ajusta esto según tus necesidades */
+    padding: 5.5px 12px; 
+    border-radius: 30px;
+    font-size: 14px; 
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     box-shadow: 0px 2px 10px 0px rgba(167, 167, 167, 0.8);
@@ -240,12 +251,317 @@ body {
 
 
 
-.StarAndNumber, .StarAndNumber2 { /* Aplicar estilos consistentes para ambas clases */
-    position: absolute; /* Cambiado: Usar posición absoluta para alinear consistentemente */
-    bottom: 95px; /* Ajustar para una mejor alineación */
-    right: 20px; /* Alinear a la derecha para consistencia */
+.StarAndNumber, .StarAndNumber2 { 
+    position: absolute; 
+    bottom: 95px; 
+    right: 20px; 
     color: rgb(32, 32, 32);
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
+#Continue {
+/*position: absolute;*/
+display: flex;
+justify-content: center;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: 16.5px;
+padding: 40px 0px 18px 0px;
+/*font-weight: bold;*/
+
+}
+
+#Showmorewrapper{
+    display: flex;
+    justify-content: center; /* Centro horizontalmente */
+    align-items: center;    /* Centro verticalmente */
+
+}
+
+#Showmore {
+    display: flex;
+    justify-content: center; /* Centro horizontalmente */
+    align-items: center;    /* Centro verticalmente */
+    background: rgb(34, 34, 34); /* Fondo semitransparente para mejorar la legibilidad */
+    color: rgb(255, 255, 255);
+    padding: 5.5px 12px; /* Ajusta el relleno según tus necesidades */
+    border-radius: 10px; /* Ajusta esto según tus necesidades */
+    font-size: 16px; /* Ajusta esto según tus necesidades */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /*box-shadow: 0px 2px 10px 0px rgba(49, 49, 49, 1)*/
+    text-align: center;
+    width: 26%;
+    height: 36px;
+    margin-bottom: 32px;
+    
+}
+
+#InspirationBlock {
+
+    margin: 0px;
+
+}
+
+#GreyBlock {
+
+    background-color: #f7f7f7;
+    height: auto;
+    width: auto;
+    margin: 0px;
+    padding: 48px 24px 48px 24px;
+
+}
+
+#InspirationText {
+
+    display: flex;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23.5px;
+    margin: 0px 0px 8px 0px;
+
+}
+
+#BottomCarrousel {
+    height: 50px;
+    overflow: auto;
+    overflow: auto;
+}
+
+#Types {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+.TypesTexts {
+
+    padding: 10px;
+    margin: 6px;
+    color: #363636;
+
+}
+
+#Popular, #Historic, #Coastal, #Islands, #Lakes, #UniqueStays, #Categories, #ThingsToDo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 1px 0px -10px;
+    white-space: nowrap;
+    /*padding: 10px 10px 10px 10px;*/
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 6px; /* Espacio entre las tarjetas */
+    padding: 24px 0px 0px 24px; /* Espacio alrededor del contenedor */
+}
+
+/* Estilo para cada tarjeta de ciudad */
+.city-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacio entre el nombre de la ciudad y el tipo de alquiler */
+    align-items: flex-start; /* Alineación de texto a la izquierda */
+    padding: 10px 10px 10px 0px;
+    margin: 0px 1px 0px -18px;
+}
+
+.city-name {
+    font-family: helvetica;
+    margin-bottom: 5px;
+    color: #0f0f0f;
+    font-size: 15px;
+}
+
+.rental-type {
+    color: #747474;
+    font-size: 15px;
+    font-family: helvetica;
+}
+
+.divider {
+    width: auto;
+    height: 1px; /* Ajusta la altura de la línea */
+    background-color: #aaaaaa; /* Color de la línea */
+    margin: 24px 0 24px 0px; /* Espacio vertical alrededor de la línea */
+}
+
+.FooterLinks {
+    /*font-family: Arial, sans-serif;*/
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    /*padding: 20px;*/
+}
+  
+  .links {
+    list-style: none;
+    /*display: flex;*/
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    white-space: nowrap;
+    padding: 24px;
+    margin: -25px 0px -32px -10px;
+    color: #0f0f0f;
+    /*padding: 10px 0px 10px 0px;*/
+
+}
+
+.support {
+
+    /*display: flex;
+    flex-direction: column;*/
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.linklinktext {
+    
+    font-size: 14px;
+    display: flex;
+    /*display: block;*/
+    flex-direction: column;
+    /*padding: -10px 0px 0px 0px;*/
+    /*margin: -10px 0px 0px 0px;*/
+
+
+}
+
+.links li {
+    margin: 0px 0px 16px -10px;
+    font-size: 15px;
+}
+
+#SupportText, #HostingText, #AirbnbText {
+    font-weight: bold;
+}
+
+#FooterFinal {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    color: #0f0f0f;
+    margin-left: -15px;
+}
+
+#WorldSymbol {
+    padding-right: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+#LanguageCurrency {
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-bottom: 16px;
+}
+
+#CopyrightInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    font-size: 15px;
+    /*font-family: monospace;*/
+
+}
+
+.footer-item {
+    /*font-family: Helvetica;*/
+    font-size: 15px;
+    color: #0f0f0f;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+#BoldFooterItem{
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Helvetica;
+    margin: 0px 0px 0px -10px;
+}
+
+#MapAndWord{
+
+height: 50px;
+/*left: 50%;*/
+/*width: auto;*/
+
+
+}
+
+#MapSymbol{
+
+    position: relative;
+    left: 15%;
+    height: 16px;
+    width: 16px;
+ 
+
+}
+
+#MapText {
+
+    position: fixed;
+    bottom: 9.5%;
+    left: 39%; 
+    background: rgb(36, 35, 35); 
+    color: rgb(255, 255, 255);
+    padding: 11px 19px 11px 19px; 
+    border-radius: 30px;
+    font-size: 15px; 
+    font-family: Cambria;
+    font-weight: bold;
+    box-shadow: 0px 2px 10px 0px rgba(167, 167, 167, 0.8);
+
+}
+
+#bottom-bar{
+    
+    position: fixed;
+    /*width: 100%;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /*padding: 10px;*/
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.BottomBarText{
+
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.BottomBarSymbol{
+
+    height: 24px;
+    width: 24px;
+}
+
+.Explore, .Whislist, .Login {
+
+    padding: 12px 0px 12px 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
